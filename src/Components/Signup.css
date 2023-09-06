@@ -1,0 +1,126 @@
+
+/* body{
+    background-color: #008F8F;
+} */
+
+.signup-container {
+    display: flex;
+    background-color: #008F8F;
+    min-height: 100vh;
+
+  }
+  
+  .background-section {    
+    background: #008F8F;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+      }
+      .background_main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+  .title-header{
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .logo{
+    margin-right:10px;
+    margin-top: 10rem;
+  }
+  
+
+  
+  .login-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height:max-content;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .login_main{
+    width: 40rem;
+    max-width: 100%;
+  }
+  
+  .login-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+
+  .signup-header{
+    color: #fff;
+    font-size: xx-large;
+    text-align: center;
+ }
+
+
+  .header-text{
+    color: #fff;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    width: 22rem;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-left: 0px !important;
+    margin-bottom: 5px;
+    /* display: flex; */
+    justify-self: left;
+ 
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #008F8F;
+    border-radius: 5px;
+  }
+
+  
+  .btnClass {
+    padding: 10px 20px;
+    background-color: #008F8F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: 3rem;
+    width: 12rem;
+    /* margin-left: 7.5rem; */
+  }
+  
+  .btn_containner{
+    display: flex;
+    justify-content: center;
+
+  }
+  button:hover {
+    background-color:rgba(0, 128, 0, 0.948);
+  }
+  
+
+@media only screen and (max-width: 767px) {  
+  .background-section{
+    display: none;
+  }
+  .signup-container {
+    background-color: #fff;
+  }
+  }

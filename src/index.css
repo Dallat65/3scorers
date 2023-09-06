@@ -1,0 +1,33 @@
+/* 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 80%;
+}
+
+body,
+#app {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+
+}
+
+html,
+body,
+#app,
+#app > div {
+    height: 100%;
+    width: 100%;
+}
