@@ -13,7 +13,7 @@ interface UserData {
 
 
 const AdminList: React.FC = () => {
-  const [admins, setAdmin] = useState<UserData[]>([]);
+  // const [admins, setAdmin] = useState<UserData[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [sortOption, setSortOption] = useState<string>('All');
 
@@ -70,6 +70,7 @@ const AdminList: React.FC = () => {
         <tbody>
           {users
             .filter((admin) => admin.role === 'admin')
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           .map((admin, index) => (
             <React.Fragment key={admin.id}>
               <tr>

@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLocation, } from "react-router-dom";
-import './Navbar.css'; // Import your CSS file
-
+import './Navbar.css'; 
 const Navbar: React.FC = () => {
   const [page, setpage] = useState("overview")
   const location = useLocation()
@@ -15,13 +14,11 @@ const Navbar: React.FC = () => {
 
   const data = localStorage.getItem("userData") || `{}`
     const parsedData= JSON.parse(data)
-    // console.log("PARSE",parsedData);
 
   return (
     <nav className="navbar">
       <div className="dashboard-name">{page}</div>
 
-      {/* User Circle Icon */}
       <div className="user-info">
         <div className="user-details">
           <span className="user-name">{parsedData?.data?.firstName?.[0]?.toUpperCase() + parsedData?.data?.firstName?.slice(1)}

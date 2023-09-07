@@ -80,7 +80,7 @@ const UserList: React.FC = () => {
                   </td>
                   <td>{`${user.firstName} ${user.lastName}`}</td>
                   <td>
-                    <button style={{ marginLeft: "60rem", backgroundColor: "#51ffff", color: "black", marginBottom: "30px", width: "10rem" }}>View Details</button>
+                    <button style={{ marginLeft: "50rem", backgroundColor: "#51ffff", color: "black", marginBottom: "30px", width: "10rem" }}>View Details</button>
                   </td>
                 </tr>
                 <tr>

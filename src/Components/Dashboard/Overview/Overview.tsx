@@ -8,21 +8,26 @@ import OverviewListAdmin from './OverviewTableAdmin';
 
 
 function Overview() {
-    // const totalUsers = "1,000,000"
-    // const totalAdmins = "970"
-    const data = localStorage.getItem("userData")
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const parsedData = JSON.parse(data)
-    // console.log("PARSE",parsedData);
+    
 
-    const [users, setUsers] = useState([])
+    interface UserData {
+        id: number;
+        image: string;
+        firstName: string;
+        lastName: string;
+        role: string;
+        status: string;
+      }
+      
+      
+    const [users, setUsers] = useState<UserData[]>([]); 
 
   const getAllUsers = async() =>{
     try {
       const userResponse = await getUsers({})
       console.log("USER RESPONSE", userResponse);
-      const result = userResponse.data.data
-        console.log("RESULT", result);
+      const result: UserData[] = userResponse.data.data; 
+      console.log("RESULT", result);
         
       setUsers(result)
     } catch (error) {
